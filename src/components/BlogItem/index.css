@@ -1,0 +1,70 @@
+/* Write your CSS code here */
+.item-link{
+    cursor: pointer;
+    outline: none;
+    text-decoration: none;
+}
+
+.blog-list{
+    list-style-type: none;
+    margin:15px;
+    border:1px solid #d3d3d3;
+    border-radius: 5px;
+}
+
+.blog-item-container{
+    display: flex;
+    flex-direction: column;
+    margin:15px;
+}
+
+.image{
+    height:170px;
+    width:100%;
+    margin-right:10px;
+    border-radius: 5px;
+}
+.blog-item-details{
+    display: flex;
+    flex-direction: column;
+}
+.topic{
+    font-family: "Roboto";
+    font-size: 16px;
+    color: #8e8e8e;
+}
+.blog-heading{
+    font-family: "Roboto";
+    font-size: 18px;
+    color: #000000;
+}
+.author-details{
+    display: flex;
+    justify-content: space-between;
+}
+.avatar-img{
+    height:30px;
+    width:30px;
+    border-radius: 50%;
+    margin-right:15px;
+}
+.author-info{
+    font-family: "Roboto";
+    font-size: 16px;
+    color: #d3d3d3;
+}
+
+@media screen and (min-width:575px){
+    .blog-item-container{
+        flex-direction: row;
+        height:170px;
+        max-width: 660px;
+    }
+    .image{
+        width:40%;
+    }
+    .blog-heading{
+    font-size: 22px;
+}
+}
+
